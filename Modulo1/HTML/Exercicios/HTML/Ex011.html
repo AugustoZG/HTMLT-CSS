@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Imagens/Editadas/moon16.ico" type="image/x-icon">
+    <title>Imagem dinâmica</title>
+</head>
+<body>
+    <p><a href="/HTML/index.html" rel="prev"><img src="/Imagens/Utils/voltar.webp" width="30" alt="Botão de voltar"></a></p>
+    <hr>
+    <!-- Exercicio 11 - Imagem dinâmica -->
+    <h1>Ex011</h1>
+    <p>Imagem dinâmica</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="/Imagens/moldes/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="/Imagens/moldes/medio.png" type="image/png">         
+        <img src="/Imagens/moldes/grande.png" alt="Logo JavaScript">        
+    </picture>
+    <hr>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Reprodução de áudio</p>
+    <audio preload="metadata" controls loop>
+        <source src="/midia/moonshine.mp3" type="audio/mpeg">
+        <source src="/midia/moonshine.ogg" type="audio/ogg">
+        <source src="/midia/moonshine.wav" type="audio/wav">
+        <p>Seu navegador não suporta o reprodução de áudio <a href="/midia/moonshine.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!-- MP3 WAV OGG -->
+</body>
+</html>

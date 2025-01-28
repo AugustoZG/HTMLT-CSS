@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Imagens/Editadas/moon16.ico" type="image/x-icon">
+    <title>Desafio001</title>
+    <style>
+        body{
+            background-color: rgb(39, 38, 38);
+        }
+    </style>
+</head>
+<body>
+    <!-- Neste desafio acabei utilizando CENTER poís no momento apenas estavamos mexendo utilizando HTML puro. -->
+<p style="color: white;"><a href="/HTML/Exercicios/Desafios/desafio001.html" rel="prev"><img src="/Imagens/desafio001/voltar.webp" width="30" alt="Botão de voltar"></a></p>
+<hr>
+<center>
+    <h1 style="color: white;">Vídeo relaxante escolhido:</h1>
+    <iframe 
+        id="videoFrame"
+        width="900" 
+        height="515" 
+        src="" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</center>
+    
+    <!-- Era para ser HTML puro, mas não queria criar 4 telas .html para cada uma ter um video já preparado internamente, então está parte eu acabei utilizan Js para não ser necessário a criação de mais 3 telas para colocar o iframe de cada video -->
+    <script>        
+        const videoMapping = {
+            netherlands360: "wi08uYZBhRs", 
+            alps360: "3PZ65s2qLTE",
+            switzerland360: "linlz7-Pnvw",
+            wonders360: "n9LgeoJE4EI"
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const videoKey = urlParams.get('video');
+
+        const videoFrame = document.getElementById('videoFrame');
+        const videolink = document.getElementById('videolink');
+
+        if (videoKey && videoMapping[videoKey]) {
+            videoFrame.src = `https://www.youtube.com/embed/${videoMapping[videoKey]}`;
+        } else {
+            document.body.innerHTML = "<h1>Vídeo não encontrado.</h1>";
+        }
+    </script>
+</body>
+</html>
