@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Modulo1/Imagens/Editadas/moon16.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        main{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.363);
+            width: 600px;
+            padding: 10px;
+            margin: auto;  
+        }   
+        body{
+            background-image: linear-gradient(to top, #034159, #025951);
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+                Medidas absolutas cm, mm, in, px, pt, pc
+                Medidas relativas: em, ex, rem, vw, vh, % 
+                16px = 1em geralmente
+            */
+            font-size: 16px;
+            color: black;
+            /* Pode ser utilizado desta maneira tambem como safe combinations : font-family: serif,sans-serif,monospace; */
+        }
+        h1
+        {
+            /*
+            font-family: 'Times New Roman', Times, serif;  serve para o tipo da fonte 
+            font-weight: bolder; /* serve para o peso da fonte 
+            font-size: 2em; /* serve para o tamanho da fonte 
+            font-style: italic; serve para o estilo da fonte
+             
+            Isto aqui em cima é o equivalente a linha abaixo*/
+            font: italic bolder 2em 'Times New Roman', Times, serif;
+            /* shorthand font
+               font-style -> font-weight -> font-size -> font-family 
+            */
+            
+        }
+    </style>
+</head>
+<body>
+    <p><a href="/Modulo2/index.html" rel="prev"><img src="/Modulo1/Imagens/Utils/voltar.webp" width="30" alt="Botão de voltar"></a></p>
+    
+    <main>
+        <h1>Trabalhando com fontes CSS</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur quas, aut tempora quo magni non laudantium ex eos commodi quam, consequatur accusantium impedit? Voluptas quisquam eos dolorum nihil enim explicabo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quasi, reiciendis sit dolorem ipsum consectetur, perferendis repellat officiis sapiente assumenda quo repellendus laudantium libero placeat delectus voluptatibus esse possimus culpa.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil consequuntur totam magni corporis cumque eos ad veniam excepturi facere quam maxime maiores, dicta modi! Aliquid tempora aperiam tenetur libero? Dicta.
+        </p>
+        <h2>Subtitulos do exercicio</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae repellat suscipit reprehenderit magni esse mollitia fugit voluptatibus vel similique numquam excepturi hic cumque vitae sed, quaerat nostrum velit voluptatum!</p>
+    </main>
+</body>
+</html>
