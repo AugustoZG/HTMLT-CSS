@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Modulo1/Imagens/Editadas/moon16.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        *{
+            margin: 1px;
+            color: white;
+            
+            /* box-shadow: 5px 5px 15px rgba(145, 144, 144, 0.363); */
+        }
+        body{
+            background-color:darkgray;
+            /* display: flex; */
+            /* background-color: aquamarine; */
+            /* color: black; */
+
+        }
+        section{
+            display: flex;
+            background-color: aquamarine;
+            margin: 10px;
+        }
+        header{
+            background-color: #025951;
+            padding: 10px;
+            margin: 10px;
+            border: 15px solid aquamarine;
+        }
+
+        a{
+            color: white;
+            /* text-decoration: none; */
+            margin-right: 2em;
+        }
+        h1{
+            text-align: center;
+            text-shadow: 1px 1px 2px black;
+        }
+        footer{
+            text-align: center;
+            display: block;
+            text-shadow: 1px 1px 2px black;
+            background-color: #025951;
+            padding: 10px;
+            margin: 10px;
+            border: 10px solid aquamarine;
+        }
+        aside{
+            background-color: #025951;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            height: 300px;
+            display: flex;
+        } 
+        main{
+            background-color: #025951;
+            padding: 10px;
+            margin: 10px;
+            width: 600px;
+            height: 300px;
+            display: flex;
+            flex-grow: 1;
+        }  
+        nav{
+            background-color: #025951;
+            padding: 3px;
+            margin: 0px;
+            border: 5px solid aquamarine;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="/Modulo2/index.html" rel="prev"><img src="/Modulo1/Imagens/Utils/voltar.webp" width="30" alt="Botão de voltar"></a></p>
+    <header>
+        <h1>Cabeçalho</h1>
+        <h2>Navegação</h2>
+        <nav><a href="">home</a><a href="">sobre</a><a href="">contato</a></nav>
+    </header>
+
+    <section>
+        <aside> barra lateral aside</aside>
+        <main><p>Principal main</p></main>
+        <aside> barra lateral aside</aside>
+    </section>
+
+    
+    <footer>
+        <p>rodapé do site</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
