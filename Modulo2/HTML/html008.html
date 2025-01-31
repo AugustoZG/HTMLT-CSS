@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Modulo1/Imagens/Editadas/moon16.ico" type="image/x-icon">
+    <title>Pseudo-classes</title>
+    <style>
+        .blocos{
+            display: inline-block;
+            background-color: lightgray;
+            border: 2px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+        div:hover{
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        #d1:hover{
+            background-color: red;
+        }
+        #d2:hover{
+            background-color: yellow;
+        }
+        #d3:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="/Modulo2/index.html" rel="prev"><img src="/Modulo1/Imagens/Utils/voltar.webp" style="width: 30px; height: 30px;" alt="Botão de voltar"></a></p>
+    <div id="d1" class="blocos">01</div>
+    <div id="d2" class="blocos">02</div>
+    <div id="d3" class="blocos">03</div>
+
+    <h1>Exemplos de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>passe o mouse aqui
+        <p>Texto escondido...</p>
+    </div>
+</body>
+</html>

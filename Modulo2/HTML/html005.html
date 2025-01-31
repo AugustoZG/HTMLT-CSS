@@ -7,12 +7,42 @@
     <link rel="stylesheet" href="/Modulo2/CSS/css003.css">
     <title>Fontes externas</title>
     <style>	
-        body    {font-family: Arial, Helvetica, sans-serif;
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        @font-face {
+            font-family: 'Cloister';
+            src: url('/Modulo2/Font/CloisterBlack.ttf') format('opentype'); 
+            font-weight: normal;
+            font-style: normal;
+            /* Tipos de formas: truetype = .ttf , opentype = .otf*/
+            font-weight: normal;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
             color: black;
         }
-        h1      {font-family: 'Times New Roman', Times, serif;
+        h1{
+            font-family: 'Kaushan Script', Times, serif;
+            text-shadow: 1px 1px 2px #03415923;
             font-size: 3em;
+            color: #025951;    
+        }
+        h2{
+            font-family: 'Kaushan Script', Times, serif;
+            text-shadow: 1px 1px 2px #03415923;
+            font-size: 2em;
+            color: #025951;    
+        }
+        p{
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1em;
+            color: #034159; 
+        }
+        h3{
+            font-family: 'Cloister', Times, serif;
+            text-shadow: 1px 1px 2px #03415923;
+            font-size: 2em;
             color: #025951;    
         }
     </style>
@@ -23,6 +53,11 @@
     <main>
         <h1>Fontes com o Google</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, magnam fugit! Placeat natus ipsam, blanditiis, eligendi esse quos excepturi pariatur commodi labore aperiam et voluptatibus earum quo accusantium laudantium consequatur!</p>
+        <h2>Subtitulo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, magnam fugit! Placeat natus ipsam, blanditiis, eligendi esse quos excepturi pariatur commodi labore aperiam et voluptatibus earum quo accusantium laudantium consequatur!</p>
+
+        <h3>Subtitulo</h3>
+        <p style="font-family: 'Cloister', Times, serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, magnam fugit! Placeat natus ipsam, blanditiis, eligendi esse quos excepturi pariatur commodi labore aperiam et voluptatibus earum quo accusantium laudantium consequatur!</p>
     </main>
     
 </body>

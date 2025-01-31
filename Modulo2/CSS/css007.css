@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*
+    o id do HTML é = # no CSS 
+    a class do HTML é = . no CSS . 
+*/
+body{
+    background-image: linear-gradient(to top, #034159, #025951);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(145, 144, 144, 0.363);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    color: #025951;
+}
+h1#principal{
+    text-align: center;
+    background-color: #0259502c;
+}
+h2{
+    color: #034159;
+}
+
+.basico{
+    color: rgb(20, 0, 134);
+}
+.intermediario{
+    color: rgb(145, 145, 0);
+}
+.avancado{
+    color: rgb(138, 0, 0);
+}
+.destaque{
+    background-color: rgba(255, 255, 0, 0.514);
+}

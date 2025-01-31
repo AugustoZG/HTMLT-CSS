@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Modulo1/Imagens/Editadas/moon16.ico" type="image/x-icon">
+    <title>Personalizando links</title>
+    <style>
+        /* 
+            SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+         */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .special{
+            background-color: rgba(161, 128, 128, 0.253);
+        }
+        .special::after{
+            content: '⚟';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .special::before{  
+            content: '✓	';  
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;  
+        }
+    </style>
+</head>
+<body>
+    <p><a href="/Modulo2/index.html" rel="prev"><img src="/Modulo1/Imagens/Utils/voltar.webp" width="30" alt="Botão de voltar"></a></p>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/AugustoZG" target="_blank">Repositório Github</a></li>
+        <li><a class = "special" href="https://www.linkedin.com/in/gabriel-augusto-zimmermann-677136251/"  target="_blank">Perfil do linkedin</a></li>
+        <li><a href="https://www.youtube.com/ " target="_blank">Canal do youtube</a></li>
+    </ul>
+</body>
+</html>
